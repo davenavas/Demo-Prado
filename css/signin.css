@@ -55,3 +55,6 @@ h1 {
 span#basic-addon2.input-group-text {
 	margin-bottom: 10px;
 }
+form {
+	margin-bottom: 2rem;
+}
