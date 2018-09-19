@@ -379,10 +379,8 @@ div.container > h4 {
 	font-size: 1.2rem;
 	margin: 1rem 0 1rem 0;
 }
-div.chatbox__body__message > p > a.btn.btn-link {
-	max-width: 290px;
-	overflow:hidden;
-	overflow-wrap: break-word;
+div.chatbox__body__message > p > a.list-group-item.list-group-item-action.list-outline-dark {
+	margin-top:0.5rem;
 }
 .list-outline-dark:hover {
     color: #fff !important;
