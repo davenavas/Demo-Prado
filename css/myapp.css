@@ -367,7 +367,8 @@ header.masthead.jumbotron.jumbotron-fluid > div.container > h1 {
 h3.section-heading.text-uppercase.text-primary {
 	margin-bottom: 1.5rem;
 	font-family: Montserrat,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji' ;
-	margin-top: 3rem;
+	padding-top: 5rem;
+	margin-top: -2rem;
 }
 #piechart > div > div > div {
 	margin-left:-90px;
@@ -382,4 +383,15 @@ div.chatbox__body__message > p > a.btn.btn-link {
 	max-width: 290px;
 	overflow:hidden;
 	overflow-wrap: break-word;
+}
+.list-outline-dark:hover {
+    color: #fff !important;
+    background-color: #343a40 !important;
+    border-color: #343a40 !important;
+}
+.list-outline-dark {
+    color: #343a40 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border-color: #343a40 !important;
 }
