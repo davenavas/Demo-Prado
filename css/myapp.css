@@ -309,11 +309,6 @@ a.nav-link > i {
 div.modal-body > div.accordion > div.card {
     text-align: left;
 }
-h5.card-title > i {
-	font-size: 2.5rem ;
-	margin: 0 1.5rem;
-	color: #2196F3;
-}
 h5.card-title {
     margin-top: .75rem;
 }
@@ -392,4 +387,24 @@ div.chatbox__body__message > p > a.list-group-item.list-group-item-action.list-o
     background-color: transparent !important;
     background-image: none !important;
     border-color: #343a40 !important;
+}
+@media (max-width:420px){
+	.portfolio-modal .modal-dialog {
+		margin: 0;
+	}
+	.modal-body {
+		padding: 0rem;
+	}
+}
+div.card-header > div.row > div > i {
+	font-size: 2.5rem ;
+	color: #2196F3;
+	margin-top:0.5rem;
+}
+div.card-header > div.row > div.col-2 {
+	text-align:right;
+}
+@media (min-width:450px){
+	h5.card-title > i {
+	}
 }
