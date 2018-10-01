@@ -378,15 +378,15 @@ div.chatbox__body__message > p > a.list-group-item.list-group-item-action.list-o
 	margin-top:0.5rem;
 }
 .list-outline-dark:hover {
-    color: #fff !important;
-    background-color: #343a40 !important;
-    border-color: #343a40 !important;
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
 }
 .list-outline-dark {
-    color: #343a40 !important;
-    background-color: transparent !important;
-    background-image: none !important;
-    border-color: #343a40 !important;
+    color: #343a40;
+    background-color: transparent;
+    background-image: none;
+    border-color: #343a40;
 }
 @media (max-width:420px){
 	.portfolio-modal .modal-dialog {
@@ -407,4 +407,19 @@ div.card-header > div.row > div.col-2 {
 @media (min-width:450px){
 	h5.card-title > i {
 	}
+}
+div.list-group-flush > a.text-left.list-group-item.list-group-item-action:hover {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+div.list-group-flush > a.text-left.list-group-item {
+    background-color: #FAFAFA;
+	color: #6c757d;
+}
+
+div.list-group-flush > a.text-left.list-group-item > h5 {
+	margin-bottom: .0;
+	margin-top: .5rem;
+	font-size: 1.1rem;
 }
