@@ -31,148 +31,253 @@
   <body>
 
     <div class="container">
+        
+        
     
     <h1>Legal en Línea</h1>
+    <br>
+    <div class="row">
+      <div class="input-group col-md-6">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Tipo:</span>
+        </div>
+        <select class="custom-select" id="select1" onchange="setForm(this.value)">
+          <option value="form1">Persona Natural</option>
+          <option value="form2">Empresa</option>
+        </select>
+  </div>
+    </div>
 
-      <form action="index.html">
+
+      <form action="index.html" id="form1">
         <h2 class="form-signin-heading">Registro de cuenta</h2>
         <br>
-        <div class="row">
-          <div class="form-group col-lg-6">
-            <label for="basic-url">A. Identificacion de la sociedad</label>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Razon o denominacion social</span>
+        
+          <div class="row">
+            <div class="form-group col-lg-6">
+              <label for="basic-url">A. Actividad</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Razon o denominación social</span>
+                </div>
+                <input type="text" class="form-control">
               </div>
-              <input type="text" class="form-control">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">RUC</span>
+                </div>
+                <input type="text" class="form-control" required pattern="[0-9]{13}">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Actividad Económica</span>
+                </div>
+                <input type="text" class="form-control">
+              </div>
             </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">RUC</span>
+            
+            <div class="form-group col-lg-6">
+              <label for="basic-url">B. Datos del representante legal</label>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Apellidos y nombres</span>
+                </div>
+                <input type="text" class="form-control">
               </div>
-              <input type="text" class="form-control" required pattern="[0-9]{13}">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Actividad Económica</span>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">No. de identificación </span>
+                </div>
+                <input type="text" class="form-control" required pattern="[0-9]{10}">
               </div>
-              <input type="text" class="form-control">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Fecha de constitucion</span>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Provincia</span>
+                </div>
+                <input type="text" class="form-control">
               </div>
-              <input type="date" class="form-control">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Fecha de inicios de actividades</span>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Ciudad</span>
+                </div>
+                <input type="text" class="form-control">
               </div>
-              <input type="date" class="form-control">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Fecha de reinicio de actividades</span>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Teléfono</span>
+                </div>
+                <input type="tel" class="form-control">
               </div>
-              <input type="date" class="form-control">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Correo electrónico</span>
+                </div>
+                <input type="email" class="form-control">
+              </div>
             </div>
           </div>
-          
-          <div class="form-group col-lg-6">
-            <label for="basic-url">B. Datos del representante legal</label>
-            
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Apellidos y nombres</span>
+        <button class="btn btn-lg btn-primary btn-block col-md-4 offset-md-4" type="submit">Entrar</button>
+      </form>
+      
+      <form action="index.html" id="form2" style="display:none">
+        <h2 class="form-signin-heading">Registro de cuenta</h2>
+        <br>
+          <div class="row">
+            <div class="form-group col-lg-6">
+              <label for="basic-url">A. Identificación de la sociedad</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Razon o denominación social</span>
+                </div>
+                <input type="text" class="form-control">
               </div>
-              <input type="text" class="form-control">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">RUC</span>
+                </div>
+                <input type="text" class="form-control" required pattern="[0-9]{13}">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Actividad Económica</span>
+                </div>
+                <input type="text" class="form-control">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Fecha de constitución </span>
+                </div>
+                <input type="date" class="form-control">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Fecha de inicios de actividades</span>
+                </div>
+                <input type="date" class="form-control">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Fecha de reinicio de actividades</span>
+                </div>
+                <input type="date" class="form-control">
+              </div>
             </div>
             
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">No. de identificacion</span>
+            <div class="form-group col-lg-6">
+              <label for="basic-url">B. Datos del representante legal</label>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Apellidos y nombres</span>
+                </div>
+                <input type="text" class="form-control">
               </div>
-              <input type="text" class="form-control" required pattern="[0-9]{10}">
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">No. de identificación </span>
+                </div>
+                <input type="text" class="form-control" required pattern="[0-9]{10}">
+              </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Cargo</span>
+                </div>
+                <input type="text" class="form-control">
+              </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"> Fecha de nombramiento </span>
+                </div>
+                <input type="date" class="form-control">
+              </div>
             </div>
             
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Cargo</span>
+            <div class="form-group col-lg-6">
+              <label for="basic-url">C. Datos de ubicación del representante legal</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Provincia</span>
+                </div>
+                <input type="text" class="form-control">
               </div>
-              <input type="text" class="form-control">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Ciudad</span>
+                </div>
+                <input type="text" class="form-control">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Teléfono</span>
+                </div>
+                <input type="tel" class="form-control">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Correo electrónico</span>
+                </div>
+                <input type="email" class="form-control">
+              </div>
             </div>
             
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text"> Fecha de nombramiento </span>
+            <div class="form-group col-lg-6">
+              <label for="basic-url">D. Datos del domicilio tributario del establecimiento</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Provincia</span>
+                </div>
+                <input type="text" class="form-control">
               </div>
-              <input type="date" class="form-control">
-            </div>
-          </div>
-          
-          <div class="form-group col-lg-6">
-            <label for="basic-url">C. Datos de ubicación del representante legal</label>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Provincia</span>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Ciudad</span>
+                </div>
+                <input type="text" class="form-control">
               </div>
-              <input type="text" class="form-control">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Ciudad</span>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Teléfono</span>
+                </div>
+                <input type="tel" class="form-control">
               </div>
-              <input type="text" class="form-control">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Telefono</span>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Correo electrónico</span>
+                </div>
+                <input type="email" class="form-control">
               </div>
-              <input type="tel" class="form-control">
+              
+              
             </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Correo electronico</span>
-              </div>
-              <input type="email" class="form-control">
-            </div>
-          </div>
-          
-          <div class="form-group col-lg-6">
-            <label for="basic-url">D. Datos del domicilio tributario del establecimiento</label>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Provincia</span>
-              </div>
-              <input type="text" class="form-control">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Ciudad</span>
-              </div>
-              <input type="text" class="form-control">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Telefono</span>
-              </div>
-              <input type="tel" class="form-control">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">Correo electronico</span>
-              </div>
-              <input type="email" class="form-control">
-            </div>
-            
-            
-          </div>
         </div>
         <button class="btn btn-lg btn-primary btn-block col-md-4 offset-md-4" type="submit">Entrar</button>
       </form>
       
 
     </div> <!-- /container -->
+    
+    <script type="text/javascript">
+	function setForm(value) {
+	
+		if(value == 'form1'){
+					document.getElementById('form1').style='display:block;';
+					document.getElementById('form2').style='display:none;';
+				}
+				else {
+	
+					document.getElementById('form2').style = 'display:block;';
+					document.getElementById('form1').style = 'display:none;';
+				}
+	
+	}
+	
+	</script>
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
