@@ -5,7 +5,7 @@
 	margin-right: 30px;
     width: 400px;
     height: 400px;
-	z-index: 3; 
+	z-index: 9999 !important; 
     font-family: 'Lato', sans-serif;
 
     -webkit-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
