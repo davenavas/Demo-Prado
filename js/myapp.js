@@ -39,8 +39,8 @@ var responses = ["Hola Lorena, cúal su pregunta el dia de hoy?","Solo para conf
             $(".chatbox__body").stop().animate({ scrollTop: $(".chatbox__body")[0].scrollHeight}, 1000);
           }, 2000);
         });
-        $(".portfolio-link").on('click', function(e) {
+        //$(".portfolio-link").on('click', function(e) {
             //$( ".close-modal" ).trigger( "click" );
-        });
+        //});
     });
 })(jQuery);
