@@ -55,7 +55,18 @@
               <a class="nav-link portfolio-link" data-toggle="modal" href="#portfolioModal5"><span class="d-lg-none">Licencias de Funcionamiento</span> <i class="icon-license"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#"><span class="d-lg-none">Más</span><i class="fa fa-ellipsis-v"></i></a>
+              <!--<a class="nav-link js-scroll-trigger" href="#"></a>-->
+              <div class="dropdown show">
+                <a class="dropdown-toggle nav-link js-scroll-trigger" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="d-lg-none">Más</span><i class="fa fa-ellipsis-v"></i>
+                </a>
+              
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#"><i class="fa fa-calendar-alt mr-2"></i> Calendario</a>
+                  <a class="dropdown-item" href="#"><i class="fa fa-user mr-2"></i> Cuenta</a>
+                  <a class="dropdown-item" href="#"><i class="fa fa-cog mr-2"></i>Configuración </a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -66,12 +77,12 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Bienvenidos a su Asesor @Law</div>
+          <div class="intro-lead-in">Bienvenidos a su Asesor <span class="logo">@Law</span></div>
           <div class="row justify-content-md-center">
             <div class="input-group input-group-lg col-md-6 ">
               <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
               <div class="input-group-append">
-                <button type="button" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                <a class="btn btn-primary" href="topic.html#page-top" role="button"><i class="fas fa-search"></i></a>
               </div>
   </div>
           </div>
