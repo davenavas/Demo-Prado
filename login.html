@@ -33,20 +33,20 @@
     
     <h1>@ Law</h1>
 
-      <form class="form-signin" action="index.html">
+      <form class="form-signin" name="loginform" onSubmit="return validateForm();" action="index.html" method="post">
         <h2 class="form-signin-heading">Ingreso a su cuenta</h2>
-        <label for="inputEmail" class="sr-only">Correo Electrónico</label>
-        <input id="inputEmail" class="form-control" placeholder="Correo Electrónico" required="" autofocus type="email">
-        <label for="inputPassword" class="sr-only">Clave</label>
+        <label for="formusername" class="sr-only">Correo Electrónico</label>
+        <input name="usr" id="formusername" class="form-control" placeholder="Correo Electrónico" required="" autofocus type="email">
+        <label for="formpassword" class="sr-only">Clave</label>
         <div class="input-group">
-          <input id="inputPassword" class="form-control" placeholder="Clave" required="" type="password" minlength="6">
+          <input name="pword" id="formpassword" class="form-control" placeholder="Clave" required="" type="password" minlength="6">
         </div>
         <div class="checkbox">
           <label>
             <input value="remember-me" type="checkbox"> Recuérdame
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" value="Login">Entrar</button>
         <button type="button" class="btn btn-link">He olvidado mi clave</button> 
       </form>
       
@@ -54,6 +54,25 @@
     </div> <!-- /container -->
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    
+    
+    <script>
+	function validateForm() {
+        var un = document.loginform.usr.value;
+        var pw = document.loginform.pword.value;
+        var username = "demo@ejprado.com"; 
+        var password = "EJPRADO2018";
+        if ((un == username) && (pw == password)) {
+            return true;
+        }
+        else {
+            alert ("El ingreso no fue exitoso, por favor revise su E-mail y Clave");
+            return false;
+        }
+  }
+	</script>
+
+
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   
 
