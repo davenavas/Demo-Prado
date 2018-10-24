@@ -58,3 +58,6 @@ span#basic-addon2.input-group-text {
 form {
 	margin-bottom: 2rem;
 }
+h4.form-signin-heading {
+	color: #c2c2c2;
+}
